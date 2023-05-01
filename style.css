@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+body {
+    background-color: #ccc;
+    font-family: 'whisper ';
+    line-height: 1.6em;
+    margin: 0;
+}
+.contenedor {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+header {
+    background-color:rgba(26, 26, 9, 0.826);
+    color: #f64c72;  
+}
+nav {
+    background-color: rgba(26, 26, 9, 0.826);
+    color: rgb(121, 82, 65);
+    
+}
+nav ul {
+    padding: 0;
+    list-style: none;  
+}
+nav li {
+    display: inline;    
+}
+
+#presentacion {
+    background-image: url("img/flor.jpg");
+    margin-bottom: 30px;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    transition: all 0.2s;
+    animation: fade-in 1s ease-in-out;
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+#presentacion h2 {
+    color: rgba(26, 26, 9, 0.826);
+    font-size: 50px;
+    line-height: 1.6em;
+    padding-top: 30px;
+}
+main {
+    float: left;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box ;
+}
+aside {
+    float: right;
+    width: 30%;
+    background-color: #f64c72;
+    border-radius: 50px;
+    color: #fff;
+    padding: 50px;
+    box-sizing: border-box ;
+    transition: all 0.2s;
+    animation: fade-in 1s ease-in-out;
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+footer {
+    background-color: #242582;
+    color: #ccc;
+    text-align: center;
+    padding: 5px;
+    margin-top: 40px;
+}
+@media (max-width: 600px) {
+    main, aside{
+        width: 100%;
+        float: none;
+    }
+    
+}
+.rotar {
+    animation: rotacion 2s linear;
+  
+}
+
+@keyframes rotacion {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
